@@ -2552,3 +2552,33 @@ INFO  2018/10/08 16:46:19         build.go:194: Exec:                           
 INFO  2018/10/08 16:46:19         build.go:199: Build successful continuing             
 INFO  2018/10/08 16:46:19            app.go:66: Exec app:                               path=/Developer/gopath/bin/revel.d/vendorcrm/vendorcrm args="[/Developer/gopath/bin/revel.d/vendorcrm/vendorcrm -port=52288 -importPath=vendorcrm -runMode={\"mode\":\"dev\", \"specialUseFlag\":false}]" 
 INFO  2018/10/08 16:46:26        watcher.go:277: Rebuilt, result                         error=nil 
+INFO  2018/10/15 12:01:32          revel.go:82: Command line options failed             error="the required flag `-a, --application-path' was not specified" 
+INFO  2018/10/15 12:01:32            run.go:90: Trying to build with                    vendorcrm=nil 
+INFO  2018/10/15 12:01:32        command_config.go:136: Returned import path                    path=vendorcrm buildpath=/Developer/gopath 
+INFO  2018/10/15 12:01:32           run.go:122: Running vendorcrm (vendorcrm) in dev mode
+
+DEBUG 2018/10/15 12:01:32           run.go:123: Base path:                              path=/Developer/gopath/src/vendorcrm 
+INFO  2018/10/15 12:01:32           run.go:127: Running in watched mode.                
+INFO  2018/10/15 12:01:32        watcher.go:208: Watcher:Notify refresh state            Current Index=0  last error index=-1 
+INFO  2018/10/15 12:01:32        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:01:32        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:01:32         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:01:32         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:01:32        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:01:32        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:01:32        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:01:32        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:01:32        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:01:32        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:01:32        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:01:32        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:01:32        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:01:32         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:01:32         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:01:32         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:01:32         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:01:32         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-73fc01e-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:01:32Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:01:34         build.go:199: Build successful continuing             
+INFO  2018/10/15 12:01:34            app.go:66: Exec app:                               path=/Developer/gopath/bin/revel.d/vendorcrm/vendorcrm args="[/Developer/gopath/bin/revel.d/vendorcrm/vendorcrm -port=60447 -importPath=vendorcrm -runMode={\"mode\":\"dev\", \"specialUseFlag\":false}]" 
+INFO  2018/10/15 12:01:35        watcher.go:277: Rebuilt, result                         error=nil 
+INFO  2018/10/15 12:01:35        harness.go:276: Proxy server is listening on localhost:9000

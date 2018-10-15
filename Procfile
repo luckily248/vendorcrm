@@ -1,0 +1,1 @@
+web: revel run vendorcrm
