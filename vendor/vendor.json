@@ -1,5 +1,11 @@
 {
 	"comment": "",
+	"heroku": {
+		"goVersion": "go1.10",
+		"install": [
+			"./..."
+		]
+	},
 	"ignore": "test",
 	"package": [
 		{
@@ -139,11 +145,55 @@
 			"path": "gopkg.in/stack.v0",
 			"revision": "9b43fcefddd0178abdabf4d484ab0d695d0011db",
 			"revisionTime": "2014-11-08T04:06:40Z"
+		},
+		{
+			"checksumSHA1": "yG+eqzO+9k7A9Ic3Jzx9AEKqFxg=",
+			"path": "vendorcrm/app",
+			"revision": "f01242149ce300eb870b8024b1f990bedcdf5e8b",
+			"revisionTime": "2018-10-15T17:02:33Z"
+		},
+		{
+			"checksumSHA1": "SAq2nCxvioN5XohW51S/xb1YUyQ=",
+			"path": "vendorcrm/app/controllers",
+			"revision": "f01242149ce300eb870b8024b1f990bedcdf5e8b",
+			"revisionTime": "2018-10-15T17:02:33Z"
+		},
+		{
+			"checksumSHA1": "8TDDI6osS3++xrYmDbxNFIVRvu0=",
+			"path": "vendorcrm/app/models",
+			"revision": "f01242149ce300eb870b8024b1f990bedcdf5e8b",
+			"revisionTime": "2018-10-15T17:02:33Z"
+		},
+		{
+			"checksumSHA1": "cIJWaZWpDbdFvZe9qf+CnCFRFZ8=",
+			"path": "vendorcrm/app/models/mongodb",
+			"revision": "f01242149ce300eb870b8024b1f990bedcdf5e8b",
+			"revisionTime": "2018-10-15T17:02:33Z"
+		},
+		{
+			"checksumSHA1": "f33zv5/yJeeJMaCo4Au6AIkQj0M=",
+			"path": "vendorcrm/app/routes",
+			"revision": "f01242149ce300eb870b8024b1f990bedcdf5e8b",
+			"revisionTime": "2018-10-15T17:02:33Z"
+		},
+		{
+			"checksumSHA1": "iFbThhyT08d7lAUrfWLFnF7jN8w=",
+			"path": "vendorcrm/app/tmp",
+			"revision": "f01242149ce300eb870b8024b1f990bedcdf5e8b",
+			"revisionTime": "2018-10-15T17:02:33Z"
+		},
+		{
+			"checksumSHA1": "CNfUgQ5tKeFt2vIJ+v7iMSVqdDc=",
+			"path": "vendorcrm/app/tmp/run",
+			"revision": "f01242149ce300eb870b8024b1f990bedcdf5e8b",
+			"revisionTime": "2018-10-15T17:02:33Z"
+		},
+		{
+			"checksumSHA1": "ChqqwDKKM8kqSiIR9E2L245iuMg=",
+			"path": "vendorcrm/tests",
+			"revision": "f01242149ce300eb870b8024b1f990bedcdf5e8b",
+			"revisionTime": "2018-10-15T17:02:33Z"
 		}
 	],
 	"rootPath": "vendorcrm"
-	"heroku": {
-        "install" : [ "./..." ],
-        "goVersion": "go1.10"
-         },
 }
