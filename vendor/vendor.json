@@ -9,11 +9,6 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "8AijOlwzzIJ6BMk/LyhAduLWcZU=",
-			"path": "context",
-			"revision": ""
-		},
-		{
 			"checksumSHA1": "HboegSJwdOINGw/Rmjgd2WXZb0E=",
 			"path": "github.com/inconshreveable/log15/term",
 			"revision": "67afb5ed74ec82fd7ac8f49d27c509ac6f991970",
