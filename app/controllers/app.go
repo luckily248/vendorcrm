@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/revel/revel"
-	"vendorcrm/app/models"
+	"./app/models"
 	"gopkg.in/mgo.v2/bson"
 )
 
