@@ -142,4 +142,8 @@
 		}
 	],
 	"rootPath": "vendorcrm"
+	"heroku": {
+        "install" : [ "./..." ],
+        "goVersion": "go1.10"
+         },
 }
