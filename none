@@ -2582,3 +2582,4 @@ INFO  2018/10/15 12:01:34         build.go:199: Build successful continuing
 INFO  2018/10/15 12:01:34            app.go:66: Exec app:                               path=/Developer/gopath/bin/revel.d/vendorcrm/vendorcrm args="[/Developer/gopath/bin/revel.d/vendorcrm/vendorcrm -port=60447 -importPath=vendorcrm -runMode={\"mode\":\"dev\", \"specialUseFlag\":false}]" 
 INFO  2018/10/15 12:01:35        watcher.go:277: Rebuilt, result                         error=nil 
 INFO  2018/10/15 12:01:35        harness.go:276: Proxy server is listening on localhost:9000
+INFO  2018/10/15 12:03:00            app.go:99: Killing revel server pid                pid=18898 
