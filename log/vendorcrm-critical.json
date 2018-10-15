@@ -1,0 +1,7 @@
+{"caller":"server.go:66","error":"no reachable servers","lvl":"crit","module":"revel","msg":"Recovered error in startup","t":"2018-10-02T08:56:57.902248-04:00"}
+{"caller":"server.go:66","error":"no reachable servers","lvl":"crit","module":"revel","msg":"Recovered error in startup","t":"2018-10-02T08:57:47.269838-04:00"}
+{"caller":"server_adapter_go.go:79","error":"listen tcp 127.0.0.1:9000: bind: address already in use","lvl":"crit","module":"revel","msg":"Failed to listen:","section":"server","t":"2018-10-02T10:29:17.077382-04:00"}
+{"caller":"server_adapter_go.go:79","error":"listen tcp 127.0.0.1:9000: bind: address already in use","lvl":"crit","module":"revel","msg":"Failed to listen:","section":"server","t":"2018-10-02T10:29:40.043236-04:00"}
+{"caller":"server_adapter_go.go:79","error":"listen tcp 127.0.0.1:9000: bind: address already in use","lvl":"crit","module":"revel","msg":"Failed to listen:","section":"server","t":"2018-10-02T10:30:02.355991-04:00"}
+{"caller":"server_adapter_go.go:79","error":"listen tcp 127.0.0.1:9000: bind: address already in use","lvl":"crit","module":"revel","msg":"Failed to listen:","section":"server","t":"2018-10-02T10:30:14.462948-04:00"}
+{"caller":"server_adapter_go.go:79","error":"listen tcp 127.0.0.1:9000: bind: address already in use","lvl":"crit","module":"revel","msg":"Failed to listen:","section":"server","t":"2018-10-02T10:31:01.442373-04:00"}

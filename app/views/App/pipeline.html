@@ -1,0 +1,204 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+{{template "mheader.html" .}}	
+	<div><h3>"
+	
+	
+	"</h3></div>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item ">
+                <a class="nav-link" href="/App/memberpage">
+                  <span data-feather="home"></span>
+                  Dashboard 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  active bg-primary text-white rounded" href="#">
+                  <span data-feather="activity"></span>
+                  Pipeline
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/products">
+                  <span data-feather="shopping-cart"></span>
+                  Products Tracker
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/suppliers">
+                  <span data-feather="users"></span>
+                  Supplier Directory
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/account">
+                  <span data-feather="settings"></span>
+                  Account
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Saved reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Current month
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Last quarter
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Social engagement
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Year-end sale
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Pipeline</h1>
+          </div>
+		  <div class="row">
+		
+			<div class="col bg-dark text-white pt-2 pb-2">
+				<a class="">
+				<h6>To Be Contacted</h5>
+				<h6 class="text-secondary">{{.tbcl}} Suppliers</h6>	
+				</a>
+				<div class="list-group mt-3" id="list">		
+					{{if .tbc}}
+					{{range .tbc}}
+					<a href="/App/supplierpage/{{.ID.Hex}}" class="list-group-item list-group-item-action">
+						<h6 class="text-primary">{{.Name}}</h6>
+						<h6 class="text-success">{{if eq .Type 0}}Manufacturer{{else}}Distributor{{end}}</h6>
+					</a>
+					{{end}}
+					{{else}}
+					{{end}}
+				</div>
+			</div>
+			
+			<div class="col bg-danger text-white pt-2 pb-2">
+					<a class="">
+					<h6>Supplier Contacted</h5>
+					<h6 class="text-secondary">{{.scl}} Suppliers</h6>	
+					</a>
+				<div class="list-group mt-3" id="list">		
+					{{if .sc}}
+					{{range .sc}}
+					<a href="/App/supplierpage/{{.ID.Hex}}" class="list-group-item list-group-item-action">
+						<h6 class="text-primary">{{.Name}}</h6>
+						<h6 class="text-success">{{if eq .Type 0}}Manufacturer{{else}}Distributor{{end}}</h6>
+					</a>
+				{{end}}
+				{{else}}
+				{{end}}
+				</div>
+			</div>
+			
+			
+			<div class="col bg-warning text-white pt-2 pb-2">
+					<a class="">
+					<h6>Supplier Responded<h5>
+					<h6 class="text-secondary">{{.srl}} Suppliers</h6>	
+					</a>
+				<div class="list-group mt-3" id="list">		
+					{{if .sr}}
+					{{range .sr}}
+					<a href="/App/supplierpage/{{.ID.Hex}}" class="list-group-item list-group-item-action">
+						<h6 class="text-primary">{{.Name}}</h6>
+						<h6 class="text-success">{{if eq .Type 0}}Manufacturer{{else}}Distributor{{end}}</h6>
+					</a>
+				{{end}}
+				{{else}}
+				{{end}}
+				</div>
+			</div>
+			
+			<div class="col bg-primary text-white pt-2 pb-2">
+					<a class="">
+					<h6>Application Received<h5>
+					<h6 class="text-secondary">{{.arl}} Suppliers</h6>	
+					</a>
+				<div class="list-group mt-3" id="list">		
+					{{if .ar}}
+					{{range .ar}}
+					<a href="/App/supplierpage/{{.ID.Hex}}" class="list-group-item list-group-item-action">
+						<h6 class="text-primary">{{.Name}}</h6>
+						<h6 class="text-success">{{if eq .Type 0}}Manufacturer{{else}}Distributor{{end}}</h6>
+					</a>
+				{{end}}
+				{{else}}
+				{{end}}
+				</div>
+			</div>
+			
+			<div class="col bg-success text-white pt-2 pb-2">
+					<a class="">
+					<h6>Application Submittd<h5>
+					<h6 class="text-secondary">{{.asl}} Suppliers</h6>	
+					</a>
+				<div class="list-group mt-3" id="list">
+						
+					{{if .as}}
+					{{range .as}}
+					<a href="/App/supplierpage/{{.ID.Hex}}" class="list-group-item list-group-item-action">
+						<h6 class="text-primary">{{.Name}}</h6>
+						<h6 class="text-success">{{if eq .Type 0}}Manufacturer{{else}}Distributor{{end}}</h6>
+					</a>
+				{{end}}
+				{{else}}
+				{{end}}
+				</div>
+			</div>
+			
+			</div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+	<script>
+		$(document).ready(function(){
+ 			 $("#search").on("keyup", function() {
+ 		   var value = $(this).val().toLowerCase();
+ 	   $("#list a").filter(function() {
+ 		     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+ 		   });
+ 		 });
+		});
+	</script>
+
+
+{{template "footer.html" .}}
