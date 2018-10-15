@@ -3,7 +3,7 @@ package models
 import (
 	"gopkg.in/mgo.v2/bson"
 	"time"
-	"./app/models/mongodb"
+	"vendorcrm/app/models/mongodb"
 )
 
 type Supplier struct {

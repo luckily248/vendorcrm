@@ -2631,3 +2631,220 @@ INFO  2018/10/15 12:15:13         build.go:208: Build failed checking for missin
 INFO  2018/10/15 12:15:13         build.go:210: Build failed no missing imports         message="app/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" 
 INFO  2018/10/15 12:15:13        watcher.go:272: Watcher: Recording error last build, setting rebuild onerror="Go Compilation Error (in app/controllers/app.go:5): local import \"./app/models\" in non-local package" 
 INFO  2018/10/15 12:15:13        watcher.go:277: Rebuilt, result                         error="Go Compilation Error (in app/controllers/app.go:5): local import \"./app/models\" in non-local package" 
+INFO  2018/10/15 12:45:33        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:45:33        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:45:33         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:45:33         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:45:33        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:45:33        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:45:33        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:45:33        reflect.go:265: Debug: Could not find import:           path=./app/models 
+INFO  2018/10/15 12:45:33        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:45:33        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:45:33        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:45:33        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:45:33        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:45:33        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:45:33        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:45:33        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:45:33         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:45:33         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:45:33         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:45:33         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:45:33         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-0301918-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:45:33Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:45:33         build.go:208: Build failed checking for missing importsmessage="app/init.go:5:2: local import \"./app/models/mongodb\" in non-local package\napp/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" missing_imports=0 
+INFO  2018/10/15 12:45:33         build.go:210: Build failed no missing imports         message="app/init.go:5:2: local import \"./app/models/mongodb\" in non-local package\napp/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" 
+INFO  2018/10/15 12:45:33        watcher.go:272: Watcher: Recording error last build, setting rebuild onerror="Go Compilation Error (in app/init.go:5): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:45:33        watcher.go:277: Rebuilt, result                         error="Go Compilation Error (in app/init.go:5): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:45:59        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:45:59        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:45:59         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:45:59         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:45:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:45:59        reflect.go:265: Debug: Could not find import:           path=../mongodb 
+INFO  2018/10/15 12:45:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:45:59        reflect.go:265: Debug: Could not find import:           path=./app/models 
+INFO  2018/10/15 12:45:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:45:59        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:45:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:45:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:45:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:45:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:45:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:45:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:45:59         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:45:59         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:45:59         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:45:59         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:45:59         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-0301918-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:45:59Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:45:59         build.go:208: Build failed checking for missing importsmessage="app/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\napp/init.go:5:2: local import \"../mongodb\" in non-local package\n" missing_imports=0 
+INFO  2018/10/15 12:45:59         build.go:210: Build failed no missing imports         message="app/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\napp/init.go:5:2: local import \"../mongodb\" in non-local package\n" 
+INFO  2018/10/15 12:45:59        watcher.go:272: Watcher: Recording error last build, setting rebuild onerror="Go Compilation Error (in app/controllers/app.go:5): local import \"./app/models\" in non-local package" 
+INFO  2018/10/15 12:45:59        watcher.go:277: Rebuilt, result                         error="Go Compilation Error (in app/controllers/app.go:5): local import \"./app/models\" in non-local package" 
+INFO  2018/10/15 12:46:07        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:46:07        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:46:07         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:46:07         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:46:07        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:46:07        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:46:07        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:46:07        reflect.go:265: Debug: Could not find import:           path=./app/models 
+INFO  2018/10/15 12:46:07        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:46:07        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:46:07        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:46:07        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:46:08        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:46:08        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:46:08        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:46:08        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:46:08         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:46:08         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:46:08         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:46:08         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:46:08         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-0301918-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:46:08Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:46:08         build.go:208: Build failed checking for missing importsmessage="app/init.go:5:2: local import \"./app/models/mongodb\" in non-local package\napp/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" missing_imports=0 
+INFO  2018/10/15 12:46:08         build.go:210: Build failed no missing imports         message="app/init.go:5:2: local import \"./app/models/mongodb\" in non-local package\napp/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" 
+INFO  2018/10/15 12:46:08        watcher.go:272: Watcher: Recording error last build, setting rebuild onerror="Go Compilation Error (in app/init.go:5): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:46:08        watcher.go:277: Rebuilt, result                         error="Go Compilation Error (in app/init.go:5): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:46:15        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:46:15        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:46:15         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:46:15         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:46:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:46:15        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:46:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:46:15        reflect.go:265: Debug: Could not find import:           path=./app/models 
+INFO  2018/10/15 12:46:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:46:15        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:46:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:46:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:46:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:46:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:46:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:46:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:46:15         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:46:15         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:46:15         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:46:15         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:46:15         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-0301918-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:46:15Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:46:15         build.go:208: Build failed checking for missing importsmessage="app/init.go:5:2: local import \"./app/models/mongodb\" in non-local package\napp/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" missing_imports=0 
+INFO  2018/10/15 12:46:15         build.go:210: Build failed no missing imports         message="app/init.go:5:2: local import \"./app/models/mongodb\" in non-local package\napp/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" 
+INFO  2018/10/15 12:46:15        watcher.go:272: Watcher: Recording error last build, setting rebuild onerror="Go Compilation Error (in app/init.go:5): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:46:15        watcher.go:277: Rebuilt, result                         error="Go Compilation Error (in app/init.go:5): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:47:15        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:47:15        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:47:15         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:15         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:47:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:47:15        reflect.go:265: Debug: Could not find import:           path=./app/models 
+INFO  2018/10/15 12:47:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:47:15        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:47:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:47:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:47:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:47:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:47:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:47:15        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:47:15         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:15         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:15         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:47:15         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:47:15         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-0301918-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:47:15Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:47:15         build.go:208: Build failed checking for missing importsmessage="app/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" missing_imports=0 
+INFO  2018/10/15 12:47:15         build.go:210: Build failed no missing imports         message="app/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" 
+INFO  2018/10/15 12:47:15        watcher.go:272: Watcher: Recording error last build, setting rebuild onerror="Go Compilation Error (in app/controllers/app.go:5): local import \"./app/models\" in non-local package" 
+INFO  2018/10/15 12:47:15        watcher.go:277: Rebuilt, result                         error="Go Compilation Error (in app/controllers/app.go:5): local import \"./app/models\" in non-local package" 
+INFO  2018/10/15 12:47:20        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:47:20        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:47:20         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:20         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:20        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:47:20        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:47:20        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:47:20        reflect.go:265: Debug: Could not find import:           path=./app/models 
+INFO  2018/10/15 12:47:20        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:47:20        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:47:20        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:47:20        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:47:20        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:47:20        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:47:20        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:47:20        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:47:20         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:20         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:20         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:47:20         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:47:20         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-0301918-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:47:20Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:47:20         build.go:208: Build failed checking for missing importsmessage="app/init.go:5:2: local import \"./app/models/mongodb\" in non-local package\napp/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" missing_imports=0 
+INFO  2018/10/15 12:47:20         build.go:210: Build failed no missing imports         message="app/init.go:5:2: local import \"./app/models/mongodb\" in non-local package\napp/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" 
+INFO  2018/10/15 12:47:20        watcher.go:272: Watcher: Recording error last build, setting rebuild onerror="Go Compilation Error (in app/init.go:5): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:47:20        watcher.go:277: Rebuilt, result                         error="Go Compilation Error (in app/init.go:5): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:47:44        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:47:44        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:47:44         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:44         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:44        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:47:44        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:47:44        reflect.go:265: Debug: Could not find import:           path=./app/models 
+INFO  2018/10/15 12:47:44        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:47:44        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:47:44        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:47:44        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:47:44        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:47:44        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:47:44        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:47:45        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:47:45         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:45         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:45         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:47:45         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:47:45         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-0301918-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:47:45Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:47:45         build.go:208: Build failed checking for missing importsmessage="app/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" missing_imports=0 
+INFO  2018/10/15 12:47:45         build.go:210: Build failed no missing imports         message="app/controllers/app.go:5:2: local import \"./app/models\" in non-local package\napp/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" 
+INFO  2018/10/15 12:47:45        watcher.go:272: Watcher: Recording error last build, setting rebuild onerror="Go Compilation Error (in app/controllers/app.go:5): local import \"./app/models\" in non-local package" 
+INFO  2018/10/15 12:47:45        watcher.go:277: Rebuilt, result                         error="Go Compilation Error (in app/controllers/app.go:5): local import \"./app/models\" in non-local package" 
+INFO  2018/10/15 12:47:52        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:47:52        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:47:52         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:52         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:52        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:47:52        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:47:52        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:47:52        reflect.go:265: Debug: Could not find import:           path=./app/models/mongodb 
+INFO  2018/10/15 12:47:53        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:47:53        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:47:53        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:47:53        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:47:53        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:47:53        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:47:53         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:53         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:53         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:47:53         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:47:53         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-0301918-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:47:53Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:47:53         build.go:208: Build failed checking for missing importsmessage="app/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" missing_imports=0 
+INFO  2018/10/15 12:47:53         build.go:210: Build failed no missing imports         message="app/models/supplier.go:6:2: local import \"./app/models/mongodb\" in non-local package\n" 
+INFO  2018/10/15 12:47:53        watcher.go:272: Watcher: Recording error last build, setting rebuild onerror="Go Compilation Error (in app/models/supplier.go:6): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:47:53        watcher.go:277: Rebuilt, result                         error="Go Compilation Error (in app/models/supplier.go:6): local import \"./app/models/mongodb\" in non-local package" 
+INFO  2018/10/15 12:47:58        watcher.go:256: Waiting for refresh timer to expire     
+INFO  2018/10/15 12:47:58        harness.go:221: Rebuild Called                          
+INFO  2018/10/15 12:47:58         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:58         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:58        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/15 12:47:58        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/15 12:47:58        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/15 12:47:58        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/15 12:47:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/15 12:47:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/15 12:47:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/15 12:47:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/15 12:47:59        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/15 12:47:59         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/15 12:47:59         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/15 12:47:59         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/15 12:47:59         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/15 12:47:59         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-0301918-dirty -X vendorcrm/app.BuildTime=2018-10-15T16:47:59Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/15 12:48:00         build.go:199: Build successful continuing             
+INFO  2018/10/15 12:48:00            app.go:66: Exec app:                               path=/Developer/gopath/bin/revel.d/vendorcrm/vendorcrm args="[/Developer/gopath/bin/revel.d/vendorcrm/vendorcrm -port=52288 -importPath=vendorcrm -runMode={\"mode\":\"dev\", \"specialUseFlag\":false}]" 
+INFO  2018/10/15 12:48:00        watcher.go:277: Rebuilt, result                         error=nil 
