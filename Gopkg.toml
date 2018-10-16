@@ -23,12 +23,15 @@
 #   non-go = false
 #   go-tests = true
 #   unused-packages = true
-
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/revel/revel"
+ignored = [
+  "github.com/revel/cron",
+  "github.com/revel/modules",
+  "github.com/revel/modules/jobs/app/jobs",
+  "github.com/revel/revel",
+  "github.com/revel/revel/testing",
+]
 
 [prune]
   go-tests = true
   unused-packages = true
+
