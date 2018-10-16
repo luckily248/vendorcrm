@@ -32,3 +32,5 @@
 [prune]
   go-tests = true
   unused-packages = true
+[metadata.heroku]
+	go-version = "go1.10.0"
