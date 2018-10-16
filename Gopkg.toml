@@ -35,6 +35,6 @@
 [metadata.heroku]
   root-package = "vendorcrm"
   go-version = "go1.10"
-  install = [ "" ]
+  install = [ "./cmd/..." ]
   ensure = "false"
-  additional-tools = ["github.com/mattes/migrate"]
+  additional-tools = ["github.com/golang-migrate/migrate"]
