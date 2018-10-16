@@ -1,1 +1,1 @@
-web:revel run vendorcrm
+web: revel run vendorcrm 
