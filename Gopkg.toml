@@ -33,4 +33,8 @@
   go-tests = true
   unused-packages = true
 [metadata.heroku]
-	go-version = "go1.10"
+  root-package = "vendorcrm"
+  go-version = "go1.10"
+  install = [ "" ]
+  ensure = "false"
+  additional-tools = ["github.com/mattes/migrate"]
