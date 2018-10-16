@@ -32,9 +32,3 @@
 [prune]
   go-tests = true
   unused-packages = true
-[metadata.heroku]
-  root-package = "vendorcrm"
-  go-version = "go1.10"
-  install = [ "./cmd/..." ]
-  ensure = "false"
-  additional-tools = ["github.com/golang-migrate/migrate"]
