@@ -1,1 +1,0 @@
-web: revel run vendorcrm prod 9000 
