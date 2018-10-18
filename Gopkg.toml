@@ -23,11 +23,7 @@
 #   non-go = false
 #   go-tests = true
 #   unused-packages = true
-ignored = [
-  "github.com/revel/cron",
-  "github.com/revel/revel",
-  "github.com/revel/revel/testing",
-]
+
 
 [prune]
   go-tests = true
