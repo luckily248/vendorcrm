@@ -1,0 +1,9 @@
+---
+applications:
+- name: vendorcrm
+  random-route: true
+  memory: 128M
+  command: revel run -a vendorcrm 
+  env:
+      GOVERSION: go1.10
+	  GOPACKAGENAME: vendorcrm
