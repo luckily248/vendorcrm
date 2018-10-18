@@ -5,5 +5,5 @@ applications:
   memory: 128M
   command: revel run -a vendorcrm 
   env:
-GOVERSION: go1.8
-GOPACKAGENAME: vendorcrm
+    GOVERSION:go1.8
+    GOPACKAGENAME:vendorcrm
