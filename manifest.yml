@@ -6,3 +6,4 @@ applications:
   command: revel run -a vendorcrm 
   env:
 GOVERSION : go1.8
+GOPACKAGENAME : vendorcrm/tmp/run
