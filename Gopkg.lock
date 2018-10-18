@@ -2,6 +2,19 @@
 
 
 [[projects]]
+  digest = "1:a0dfd75e72729ee0c32ac924f4eca3939647e10ce46fad7b11d9ea81088aeeca"
+  name = "github.com/revel/modules"
+  packages = [
+    "static/app/controllers",
+    "static/app/model",
+    "testrunner/app",
+    "testrunner/app/controllers",
+  ]
+  pruneopts = "UT"
+  revision = "6403ed92ef388a1ec746c08db8456397fc0b8f89"
+  version = "v0.20.1"
+
+[[projects]]
   branch = "v2"
   digest = "1:988de7520a09024d5d94cd99bd545afbf194893994ec759b1cda0a0bbb6adb80"
   name = "gopkg.in/mgo.v2"
@@ -19,6 +32,9 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/revel/modules/static/app/controllers",
+    "github.com/revel/modules/testrunner/app",
+    "github.com/revel/modules/testrunner/app/controllers",
     "gopkg.in/mgo.v2",
     "gopkg.in/mgo.v2/bson",
   ]
