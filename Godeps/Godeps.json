@@ -1,0 +1,126 @@
+{
+	"ImportPath": "vendorcrm",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/inconshreveable/log15/term",
+			"Comment": "v2.14",
+			"Rev": "67afb5ed74ec82fd7ac8f49d27c509ac6f991970"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-colorable",
+			"Comment": "v0.0.9-14-gefa5899",
+			"Rev": "efa589957cd060542a26d2dd7832fd6a6c6c3ade"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-isatty",
+			"Comment": "v0.0.4-6-g3fb116b",
+			"Rev": "3fb116b820352b7f0c281308a4d6250c22d94e27"
+		},
+		{
+			"ImportPath": "github.com/revel/config",
+			"Comment": "v0.14.0-2-gb9aac07",
+			"Rev": "b9aac071717b3f97343cd7abcd3e671a6c254a91"
+		},
+		{
+			"ImportPath": "github.com/revel/log15",
+			"Comment": "v2.11.20",
+			"Rev": "793412a67da6f8d15fede4c38f5c66272478cb8a"
+		},
+		{
+			"ImportPath": "github.com/revel/modules/static/app/controllers",
+			"Comment": "v0.20.0-2-gb258549",
+			"Rev": "b2585495542575260f5fc07d86bf0f8b86b494b4"
+		},
+		{
+			"ImportPath": "github.com/revel/modules/static/app/model",
+			"Comment": "v0.20.0-2-gb258549",
+			"Rev": "b2585495542575260f5fc07d86bf0f8b86b494b4"
+		},
+		{
+			"ImportPath": "github.com/revel/modules/testrunner/app",
+			"Comment": "v0.20.0-2-gb258549",
+			"Rev": "b2585495542575260f5fc07d86bf0f8b86b494b4"
+		},
+		{
+			"ImportPath": "github.com/revel/modules/testrunner/app/controllers",
+			"Comment": "v0.20.0-2-gb258549",
+			"Rev": "b2585495542575260f5fc07d86bf0f8b86b494b4"
+		},
+		{
+			"ImportPath": "github.com/revel/pathtree",
+			"Rev": "41257a1839e945fce74afd070e02bab2ea2c776a"
+		},
+		{
+			"ImportPath": "github.com/revel/revel",
+			"Comment": "v0.20.0-2-g77796eb",
+			"Rev": "77796eba191595b8ac7dc6046742ec50ab82088c"
+		},
+		{
+			"ImportPath": "github.com/revel/revel/logger",
+			"Comment": "v0.20.0-2-g77796eb",
+			"Rev": "77796eba191595b8ac7dc6046742ec50ab82088c"
+		},
+		{
+			"ImportPath": "github.com/revel/revel/testing",
+			"Comment": "v0.20.0-2-g77796eb",
+			"Rev": "77796eba191595b8ac7dc6046742ec50ab82088c"
+		},
+		{
+			"ImportPath": "github.com/xeonx/timeago",
+			"Comment": "v1.0.0-rc3",
+			"Rev": "714e6695c468c22fb6431a914d8c5f9d19fa2367"
+		},
+		{
+			"ImportPath": "golang.org/x/net/websocket",
+			"Rev": "49bb7cea24b1df9410e1712aa6433dae904ff66a"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "fa43e7bc11baaae89f3f902b2b4d832b68234844"
+		},
+		{
+			"ImportPath": "gopkg.in/fsnotify/fsnotify.v1",
+			"Comment": "v1.4.7",
+			"Rev": "c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2",
+			"Comment": "r2016.08.01-7-g9856a29",
+			"Rev": "9856a29383ce1c59f308dd1cf0363a79b5bef6b5"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/bson",
+			"Comment": "r2016.08.01-7-g9856a29",
+			"Rev": "9856a29383ce1c59f308dd1cf0363a79b5bef6b5"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/internal/json",
+			"Comment": "r2016.08.01-7-g9856a29",
+			"Rev": "9856a29383ce1c59f308dd1cf0363a79b5bef6b5"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/internal/sasl",
+			"Comment": "r2016.08.01-7-g9856a29",
+			"Rev": "9856a29383ce1c59f308dd1cf0363a79b5bef6b5"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/internal/scram",
+			"Comment": "r2016.08.01-7-g9856a29",
+			"Rev": "9856a29383ce1c59f308dd1cf0363a79b5bef6b5"
+		},
+		{
+			"ImportPath": "gopkg.in/natefinch/lumberjack.v2",
+			"Comment": "v2.1",
+			"Rev": "a96e63847dc3c67d17befa69c303767e2f84e54f"
+		},
+		{
+			"ImportPath": "gopkg.in/stack.v0",
+			"Rev": "9b43fcefddd0178abdabf4d484ab0d695d0011db"
+		}
+	]
+}
