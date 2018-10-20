@@ -3,7 +3,7 @@ applications:
 - name: vendorcrm
   random-route: true
   memory: 128M
-  command: revel run -a vendorcrm
+  command: ./bin/run
   buildpack: https://github.com/luckily248/go-buildpack-master
   env:
     GOVERSION: go1.10
