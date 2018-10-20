@@ -6,5 +6,6 @@ applications:
   command: revel run -a vendorcrm
   buildpack: https://github.com/luckily248/go-buildpack-master
   env:
-GOVERSION : go1.10,
-GOPACKAGENAME : vendorcrm
+    GOVERSION: go1.10
+    GOPACKAGENAME: vendorcrm
+
