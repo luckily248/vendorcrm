@@ -7,5 +7,5 @@ applications:
   buildpack: https://github.com/luckily248/go-buildpack-master
   env:
     GOVERSION: go1.10
-    GOPACKAGENAME: vendorcrm
+    GOPACKAGENAME: vendorcrm/tmp
 
