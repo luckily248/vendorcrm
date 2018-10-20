@@ -3,7 +3,7 @@ applications:
 - name: vendorcrm
   random-route: true
   memory: 128M
-  command: bash bin/run.sh
+  command: pwd
   buildpack: https://github.com/luckily248/go-buildpack-master
   env:
     GOVERSION: go1.10
