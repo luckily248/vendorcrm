@@ -2,12 +2,28 @@
 
 
 [[projects]]
+  digest = "1:b5af2c54e203a2dd7b4b88e9822f51e3e2922ed4fdfb0b1c2a5246d61a3598e1"
+  name = "github.com/agtorre/gocolorize"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "f42b554bf7f006936130c9bb4f971afd2d87f671"
+  version = "v1.0.0"
+
+[[projects]]
   digest = "1:6a539f22990dee302ae4ce63f29eae68061a546c4f30d75b2c4e7266c5619ce3"
   name = "github.com/inconshreveable/log15"
   packages = ["term"]
   pruneopts = "UT"
   revision = "67afb5ed74ec82fd7ac8f49d27c509ac6f991970"
   version = "v2.14"
+
+[[projects]]
+  digest = "1:a2cff208d4759f6ba1b1cd228587b0a1869f95f22542ec9cd17fff64430113c7"
+  name = "github.com/jessevdk/go-flags"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c6ca198ec95c841fdb89fc0de7496fed11ab854e"
+  version = "v1.4.0"
 
 [[projects]]
   digest = "1:c658e84ad3916da105a761660dcaeb01e63416c8ec7bc62256a9b411a05fcd67"
@@ -24,6 +40,24 @@
   pruneopts = "UT"
   revision = "6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c"
   version = "v0.0.4"
+
+[[projects]]
+  digest = "1:79aa387273485fd18b943419908e49e64c6e7696e0da630f32dcd6dbe7c4791f"
+  name = "github.com/revel/cmd"
+  packages = [
+    ".",
+    "harness",
+    "logger",
+    "model",
+    "parser",
+    "revel",
+    "tests",
+    "utils",
+    "watcher",
+  ]
+  pruneopts = "UT"
+  revision = "be7bebd9629a37a51845b37c502a920d324ff867"
+  version = "v0.20.2"
 
 [[projects]]
   digest = "1:4cf28ed1408f1412f4bf6841dbb2923e0e97c1d060499ae4e7fbfdd6d95052f8"
@@ -140,6 +174,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/revel/cmd/revel",
     "github.com/revel/modules/static/app/controllers",
     "github.com/revel/modules/testrunner/app",
     "github.com/revel/modules/testrunner/app/controllers",

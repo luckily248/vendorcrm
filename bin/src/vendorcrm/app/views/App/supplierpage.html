@@ -1,0 +1,236 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+{{template "mheader.html" .}}	
+	<div><h3>"
+	
+	
+	"</h3></div>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item ">
+                <a class="nav-link active bg-primary text-white rounded" href="/App/memberpage">
+                  <span data-feather="home"></span>
+                  Dashboard 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/pipeline">
+                  <span data-feather="activity"></span>
+                  Pipeline
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/products">
+                  <span data-feather="shopping-cart"></span>
+                  Products Tracker
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/suppliers">
+                  <span data-feather="users"></span>
+                  Supplier Directory
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/account">
+                  <span data-feather="settings"></span>
+                  Account
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Saved reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Current month
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Last quarter
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Social engagement
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Year-end sale
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+		<div class="container-fluid">
+		{{if .supplier}}
+          <div class="row d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">{{.supplier.Name}}</h1>
+          </div>
+			<div class="row d-flex pt-3 pb-4 mb-3 mt-3 border-bottom">
+			{{if eq .supplier.Pstate 0}}
+			<button type="button" value="0" class="btn-lg btn-dark rounded-0 pstate">To Be Contacted</button>
+			<button type="button" value="1" class="btn-lg btn-outline-danger rounded-0 pstate">Supplier Contacted</button>
+			<button type="button" value="2" class="btn-lg btn-outline-warning rounded-0 pstate">Supplier Responded</button>
+			<button type="button" value="3" class="btn-lg btn-outline-primary rounded-0 pstate">Application Received</button>
+			<button type="button" value="4" class="btn-lg btn-outline-success rounded-0 pstate">Application Submitted</button>
+			{{else if eq .supplier.Pstate 1}}
+			<button type="submit" value="0" class="btn-lg btn-dark rounded-0 pstate">To Be Contacted</button>
+			<button type="submit" value="1" class="btn-lg btn-danger rounded-0 pstate">Supplier Contacted</button>
+			<button type="submit" value="2" class="btn-lg btn-outline-warning rounded-0 pstate">Supplier Responded</button>
+			<button type="submit" value="3" class="btn-lg btn-outline-primary rounded-0 pstate">Application Received</button>
+			<button type="submit" value="4" class="btn-lg btn-outline-success rounded-0 pstate">Application Submitted</button>
+			{{else if eq .supplier.Pstate 2}}
+			<button type="submit" value="0" class="btn-lg btn-dark rounded-0 pstate">To Be Contacted</button>
+			<button type="submit" value="1" class="btn-lg btn-danger rounded-0 pstate">Supplier Contacted</button>
+			<button type="submit" value="2" class="btn-lg btn-warning rounded-0 pstate">Supplier Responded</button>
+			<button type="submit" value="3" class="btn-lg btn-outline-primary rounded-0 pstate">Application Received</button>
+			<button type="submit" value="4" class="btn-lg btn-outline-success rounded-0 pstate">Application Submitted</button>
+			{{else if eq .supplier.Pstate 3}}
+			<button type="submit" value="0" class="btn-lg btn-dark rounded-0 pstate">To Be Contacted</button>
+			<button type="submit" value="1" class="btn-lg btn-danger rounded-0 pstate">Supplier Contacted</button>
+			<button type="submit" value="2" class="btn-lg btn-warning rounded-0 pstate">Supplier Responded</button>
+			<button type="submit" value="3" class="btn-lg btn-primary rounded-0 pstate">Application Received</button>
+			<button type="submit" value="4" class="btn-lg btn-outline-success rounded-0 pstate">Application Submitted</button>
+			{{else}}
+			<button type="submit" value="0"  class="btn-lg btn-dark rounded-0 pstate">To Be Contacted</button>
+			<button type="submit" value="1" class="btn-lg btn-danger rounded-0 pstate">Supplier Contacted</button>
+			<button type="submit" value="2" class="btn-lg btn-warning rounded-0 pstate">Supplier Responded</button>
+			<button type="submit" value="3" class="btn-lg btn-primary rounded-0 pstate">Application Received</button>
+			<button type="submit" value="4" class="btn-lg btn-success rounded-0 pstate">Application Submitted</button>
+			{{end}}
+			</div>
+			<div class="row">
+				<div class="col-md-4 container-fluid">
+				<div class="row">
+					<h5 class="border-bottom">Supplier Details</h5>
+				</div>
+				<div class="row">
+					<div class="col">
+					<h6>Name</h6>
+					</div>
+					<div class="col">
+					<h6>{{.supplier.Name}}</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+					<h6>Type</h6>
+					</div>
+					<div class="col">
+					<h6>{{if eq .supplier.Type 0}}Manufacturer{{else}}Distributor{{end}}</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+					<h6>Phone</h6>
+					</div>
+					<div class="col">
+					<h6>{{.supplier.Phone}}</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+					<h6>Email</h6>
+					</div>
+					<div class="col">
+					<h6>{{.supplier.Email}}</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+					<h6>Website</h6>
+					</div>
+					<div class="col">
+					<h6>{{.supplier.Website}}</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+					<h6>Description</h6>
+					</div>
+					<div class="col">
+					<h6>{{.supplier.Des}}</h6>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-4">
+					<h5 class="border-bottom mb-3">
+					<span data-feather="file-text"></span>
+					Add Notes</h5>
+					<form>
+					<textarea class="form-control mb-2" id="" rows="3"></textarea>
+			        <button type="button" class="btn btn-secondary">Cancel</button>
+			        <button type="submit" id="" class="btn btn-primary">Add</button>
+					</form>
+					<h5 class="border-bottom mb-3 mt-5">
+					<span data-feather="upload"></span>
+					Upload File</h5>
+					<input type="file" class="form-control-file mb-3" id="exampleFormControlFile1">
+					<button type="button" class="btn btn-secondary">Cancel</button>
+			        <button type="submit" id="" class="btn btn-primary">Upload</button>
+				</div>
+				<div class="col-md-4">
+					
+				</div>
+			</div>
+		{{else}}
+		{{end}}
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+	<script>
+	$(document).ready(function(){
+    $(".pstate").click(function(e){
+		console.log("on");
+        e.preventDefault();
+		var supplier={{.supplier}};
+		supplier.pstate=parseInt($(this).val(), 10);
+        $.ajax({
+                    url: "/suppliers",
+                    dataType: 'json',
+                    type: 'PUT',
+                    contentType: 'application/json',
+                    data: JSON.stringify(supplier),
+                    success: function(data){
+                        console.log("DATA POSTED SUCCESSFULLY"+data);
+						$("#addsuppliermodal").modal('hide');
+						location.reload();
+                    },
+                    error: function( jqXhr, textStatus, errorThrown ){
+                        console.log( errorThrown );
+						$("#addsuppliermodal").modal('hide');
+						location.reload();
+                    }
+		        });
+			});
+		});
+
+	</script>
+
+{{template "footer.html" .}}

@@ -1,0 +1,136 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+{{template "mheader.html" .}}
+	<div><h3>"
+	
+	
+	"</h3></div>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item ">
+                <a class="nav-link" href="/App/memberpage">
+                  <span data-feather="home"></span>
+                  Dashboard 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/pipeline">
+                  <span data-feather="activity"></span>
+                  Pipeline
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/products">
+                  <span data-feather="shopping-cart"></span>
+                  Products Tracker
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active bg-primary text-white rounded" href="/App/suppliers">
+                  <span data-feather="users"></span>
+                  Supplier Directory
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/App/account">
+                  <span data-feather="settings"></span>
+                  Account
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Saved reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Current month
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Last quarter
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Social engagement
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Year-end sale
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Suppliers</h1>
+          </div>
+			<table class="table table-hover">
+			    <thead>
+			      <tr>
+			        <th>Supplier Name</th>
+			        <th>Type</th>
+					<th>Phone</th>
+					<th>Email</th>
+					<th>Website</th>
+					<th>Pipeline Stage</th>
+					<th>Supplier Stage</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+				{{if .suppliers}}
+				{{range .suppliers}}
+			      <tr>
+			        <td>
+					<a href="/App/supplierpage/{{.ID.Hex}}">{{.Name}}</a></td>
+			        <td>{{if eq .Type 0}}Manufacturer{{else}}Distributor{{end}}</td>
+			        <td>{{.Phone}}</td>
+					<td>{{.Email}}</td>
+					<td>{{.Website}}</td>
+					<td>{{if eq .Pstate 0}}To Be Contacted
+						{{else if eq .Pstate 1}}Supplier Contacted
+						{{else if eq .Pstate 2}}Supplier Responded
+						{{else if eq .Pstate 3}}Application Received
+						{{else if eq .Pstate 4}}Application Submitted{{end}}</td>
+					<td>{{if eq .Sstate 0}}Lost
+						{{else if eq .Sstate 1}}In Progress
+						{{else if eq .Sstate 2}}Won{{end}}</td>
+			      </tr>
+				{{end}}
+				{{else}}
+				{{end}}
+			    </tbody>
+			  </table>
+          
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+
+{{template "footer.html" .}}

@@ -40,3 +40,7 @@
 [prune]
   go-tests = true
   unused-packages = true
+
+[[constraint]]
+  name = "github.com/revel/cmd"
+  version = "0.20.2"

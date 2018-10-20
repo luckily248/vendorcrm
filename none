@@ -4385,3 +4385,27 @@ INFO  2018/10/18 12:59:29         build.go:116: No vendor folder detected, not u
 INFO  2018/10/18 12:59:29         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
 INFO  2018/10/18 12:59:29         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-f4f5f7d-dirty -X vendorcrm/app.BuildTime=2018-10-18T16:59:29Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
 INFO  2018/10/18 12:59:30         build.go:199: Build successful continuing             
+INFO  2018/10/20 10:08:45          revel.go:82: Command line options failed             error="the required flags `-a, --application-path' and `-t, --target-path' were not specified" 
+INFO  2018/10/20 10:08:45        command_config.go:136: Returned import path                    path=vendorcrm buildpath=/Developer/gopath 
+INFO  2018/10/20 10:09:12          revel.go:82: Command line options failed             error="the required flags `-a, --application-path' and `-t, --target-path' were not specified" 
+INFO  2018/10/20 10:09:38          revel.go:82: Command line options failed             error="the required flags `-a, --application-path' and `-t, --target-path' were not specified" 
+INFO  2018/10/20 10:09:38        command_config.go:136: Returned import path                    path=vendorcrm buildpath=/Developer/gopath 
+INFO  2018/10/20 10:09:38         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/20 10:09:38         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/20 10:09:38        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app 
+INFO  2018/10/20 10:09:38        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/controllers 
+INFO  2018/10/20 10:09:38        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models 
+INFO  2018/10/20 10:09:38        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/app/models/mongodb 
+INFO  2018/10/20 10:09:38        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/10/20 10:09:38        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/static/app/model 
+INFO  2018/10/20 10:09:38        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app 
+INFO  2018/10/20 10:09:38        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/10/20 10:09:38        reflect.go:169: Exaimining files in path                package=/Developer/gopath/src/vendorcrm/tests 
+INFO  2018/10/20 10:09:38         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/10/20 10:09:38         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/10/20 10:09:38         build.go:107: Vendor folder detected, scanning for deps in path
+INFO  2018/10/20 10:09:38         build.go:280: Exec:                                   args="[/usr/bin/git --git-dir=/Developer/gopath/src/vendorcrm/.git --work-tree=/Developer/gopath/src/vendorcrm describe --always --dirty]" 
+INFO  2018/10/20 10:09:38         build.go:194: Exec:                                   args="[/usr/local/go/bin/go build -i -ldflags -X vendorcrm/app.AppVersion=git-a0add9b-dirty -X vendorcrm/app.BuildTime=2018-10-20T14:09:38Z -tags  -o /Developer/gopath/bin/revel.d/vendorcrm/vendorcrm vendorcrm/app/tmp]" 
+INFO  2018/10/20 10:09:40         build.go:199: Build successful continuing             
+INFO  2018/10/20 10:09:40         build.go:154: Copy files                              to=/Developer/gopath/src/vendorcrm/bin/src/github.com/revel/modules/static from=/Developer/gopath/src/github.com/revel/modules/static 
+INFO  2018/10/20 10:09:40         build.go:154: Copy files                              to=/Developer/gopath/src/vendorcrm/bin/src/github.com/revel/modules/testrunner from=/Developer/gopath/src/github.com/revel/modules/testrunner 
