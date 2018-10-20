@@ -69,18 +69,28 @@ func (c *Config) HasOption(section string, option string) bool {
 // It returns an error if the section does not exist and an empty list if the
 // section is empty. Options within the default section are also included.
 func (c *Config) Options(section string) (options []string, err error) {
-	if _, ok := c.data[section]; !ok {
+	// If no section passed in then assume we are only looking at the default section
+	var optionMap map[string]struct{}
+	onlyDefault := section=="" || section== DefaultSection
+
+	if  onlyDefault {
+		optionMap = make(map[string]struct{},
+			len(c.data[DefaultSection])+len(c.data[section]))
+	} else if _, ok := c.data[section]; !ok {
 		return nil, errors.New(SectionError(section).Error())
+	} else {
+		// Keep a map of option names we've seen to deduplicate.
+		optionMap = make(map[string]struct{},
+			len(c.data[DefaultSection]) + len(c.data[section]))
 	}
 
-	// Keep a map of option names we've seen to deduplicate.
-	optionMap := make(map[string]struct{},
-		len(c.data[DefaultSection])+len(c.data[section]))
 	for s := range c.data[DefaultSection] {
 		optionMap[s] = struct{}{}
 	}
-	for s := range c.data[section] {
-		optionMap[s] = struct{}{}
+	if !onlyDefault {
+		for s := range c.data[section] {
+			optionMap[s] = struct{}{}
+		}
 	}
 
 	// Get the keys.
